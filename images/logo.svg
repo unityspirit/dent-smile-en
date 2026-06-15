@@ -1,3 +1,6 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="36" fill="#ffffff" letter-spacing="2">DENT SMILE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <path d="M40 35 C40 20 55 10 60 10 C65 10 80 20 80 35 C80 55 75 75 70 90 C67 98 63 98 60 90 C57 98 53 98 50 90 C45 75 40 55 40 35Z" fill="none" stroke="#00bcd4" stroke-width="2.5"/>
+  <path d="M48 40 Q60 50 72 40" fill="none" stroke="#00bcd4" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="50" cy="32" r="2" fill="#00bcd4" opacity="0.4"/>
+  <circle cx="70" cy="32" r="2" fill="#00bcd4" opacity="0.4"/>
 </svg>

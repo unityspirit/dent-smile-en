@@ -1,4 +1,4 @@
-﻿/* =============================================
+/* =============================================
    DENT SMILE — styles.css
    Theme: Ice Blue Medical (#4FC3F7 / #0288D1)
    Fonts: Playfair Display (headings) + Lato (body)
@@ -21,14 +21,14 @@
 
   /* 8-direction black text-shadow for text over video */
   --ts: 
-    1px  1px 0 rgba(0,0,0,1),
-   -1px -1px 0 rgba(0,0,0,1),
-    1px -1px 0 rgba(0,0,0,1),
-   -1px  1px 0 rgba(0,0,0,1),
-    2px  2px 0 rgba(0,0,0,0.8),
-   -2px -2px 0 rgba(0,0,0,0.8),
-    0 0 8px rgba(0,0,0,0.9),
-    0 0 20px rgba(0,0,0,0.7);
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000,
+    0   -1px 0 #000,
+    0    1px 0 #000,
+   -1px  0   0 #000,
+    1px  0   0 #000;
 }
 
 /* === RESET & BASE === */
@@ -98,6 +98,13 @@ img { max-width: 100%; display: block; }
   gap: 24px;
 }
 
+.loader-logo-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
 .loader-logo {
   font-family: var(--font-h);
   font-size: clamp(2rem, 8vw, 4rem);
@@ -158,10 +165,12 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
-.nav-logo-img {
-  height: 34px;
-  width: auto;
-  mix-blend-mode: screen;
+.nav-logo img,
+.nav-logo-img,
+.logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .nav-brand {
@@ -531,7 +540,15 @@ img { max-width: 100%; display: block; }
   color: var(--white);
   line-height: 1.0;
   letter-spacing: 0.04em;
-  text-shadow: var(--ts);
+  text-shadow:
+   -2px -2px 0 #000,
+    2px -2px 0 #000,
+   -2px  2px 0 #000,
+    2px  2px 0 #000,
+    0   -2px 0 #000,
+    0    2px 0 #000,
+   -2px  0   0 #000,
+    2px  0   0 #000;
 }
 
 .hero-subtitle {
@@ -815,11 +832,13 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 20px rgba(79, 195, 247, 0.15);
 }
 
-.step-number {
+.step-number,
+.step-num {
   font-family: var(--font-h);
   font-size: 3rem;
   font-weight: 700;
-  color: rgba(79, 195, 247, 0.2);
+  color: var(--primary);
+  opacity: 1;
   line-height: 1;
   text-shadow: none;
   letter-spacing: -0.02em;
@@ -972,7 +991,7 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-t);
   font-size: 0.78rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.85);
   margin-top: 4px;
   text-shadow: var(--ts);
 }
